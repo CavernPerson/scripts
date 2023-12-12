@@ -1,0 +1,54 @@
+{
+  "name": "deploy-test-suite",
+  "version": "1.0.0",
+  "description": "Objects for testing terra based projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "p2p-test": "node dist/p2p-flow-test.js",
+    "p2p-load-test": "node dist/p2p-load-test.js",
+    "p2p-query-test": "node dist/p2p-query-test.js",
+    "new_token": "node dist/upload_new_token.js",
+    "upload-p2p": "node dist/upload_p2p.js",
+    "update-fee": "node dist/update_fee.js",
+    "withdraw": "node dist/withdraw_all.js",
+    "pun": "node dist/punctual_test.js",
+    "init": "node dist/send_funds.js",
+    "upload-loan": "node dist/loans/upload_loan.js",
+    "loan-flow-test": "node dist/loans/loan_flow.js",
+    "loan-query": "node dist/loans/loan_query.js",
+    "upload-nft": "node dist/nft/upload_new_nft.js",
+    "migrate": "node dist/P2P/migrate_p2p.js",
+    "depositor-test": "node dist/depositor/deposit_test.js",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+  },
+  "keywords": [
+    "terra"
+  ],
+  "author": "Kayanski",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "eslint": "^8.25.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "^2.5.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@cosmjs/cosmwasm-stargate": "^0.31.0",
+    "@cosmjs/stargate": "^0.31.0",
+    "@types/lodash": "^4.14.191",
+    "cloudscraper": "^4.6.0",
+    "cosmjs-types": "^0.8.0",
+    "lodash": "^4.17.21",
+    "lz-string": "^1.4.4",
+    "progressbar": "^1.3.0",
+    "shrink-string": "^3.1.2"
+  }
+}
